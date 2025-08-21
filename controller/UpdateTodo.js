@@ -7,7 +7,7 @@ const updateTodo = async (req, res) => {
 
     // Return the updated document
     const response = await Todo.findByIdAndUpdate(
-    {_id:id},
+      id,
       { title, description, updatedAt: Date.now() },
       { new: true }
     );

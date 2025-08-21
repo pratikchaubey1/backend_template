@@ -4,10 +4,12 @@ const { createTodo } = require('../controller/CreateTodo');
 const Gettodo = require('../controller/Gettodo');
 const GetTodo = require('../controller/GetTodoid');
 const UpdateTodo = require('../controller/UpdateTodo');
+const DeleteTodo = require('../controller/DeleteTodo')
 
 router.post('/todo', createTodo);
 router.get('/Gettodo', Gettodo);
 router.get('/Gettodoid/:id', GetTodo);
 router.put('/Updatetodo/:id', UpdateTodo);
+router.delete("/Deletetodo/:id", DeleteTodo);
 
 module.exports = router;
